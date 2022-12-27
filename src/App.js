@@ -33,6 +33,7 @@ class App extends Component {
     const filteredResult = this.state.monsters.filter(monster => monster.name.toLowerCase().includes(this.state.searchKeyword));
     return (
       < div className='App' >
+        <h1 className='app-title'>Monsters Rolodex </h1>
         <SearchBox className='search-box'
           onSearchChangeHandler={this.onSearchTextChange}
           placeHolder={'Search monsters'} />
